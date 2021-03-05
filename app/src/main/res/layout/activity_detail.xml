@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity">
+
+        <ImageView
+            android:id="@+id/poster_img"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/poster_img"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tag_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movie_name"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:text="" />
+
+        <View
+            android:id="@+id/divider_0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tag_line"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/divider_0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/poster"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/year"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/poster"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genre"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/poster"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/ic_rating"
+            android:singleLine="true"
+            android:text="" />
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/poster"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Homepage : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/home_page_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="web"
+            android:layout_toRightOf="@+id/home_page"
+            android:text="" />
+
+        <View
+            android:id="@+id/divider_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/home_page_url"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/body_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Overview : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/home_page"
+            android:text="" />
+
+        <View
+            android:id="@+id/divider_5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/home_page"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progressBar"/>
+
+    </RelativeLayout>
+</ScrollView>

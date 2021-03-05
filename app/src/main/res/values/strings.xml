@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies Detail app</string>
+    <string name="no_internet_msg">No Internet!</string>
+    <string name="no_data_found_msg">No Data Found</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
